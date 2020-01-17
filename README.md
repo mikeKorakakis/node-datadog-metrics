@@ -54,7 +54,7 @@ API key. You can find the API key under [Integrations > APIs](https://app.datado
 ### DataDog HOST
 
 You can set your Datadog server with the `DATADOG_SERVER` environment variable.
-For example DATADOG_SERVER='api.datadoghq.eu' or DATADOG_SERVER='api.datadoghq.com'
+For example DATADOG_SERVER=api.datadoghq.eu or DATADOG_SERVER=api.datadoghq.com
 
 ### Module setup
 
