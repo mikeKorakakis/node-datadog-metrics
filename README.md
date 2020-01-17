@@ -22,7 +22,7 @@ npm install datadog-metrics --save
 Save the following into a file named `example_app.js`:
 ```js
 var metrics = require('datadog-metrics');
-metrics.init({ host: 'myhost', prefix: 'myapp.' });
+metrics.init({ host: 'myhost', prefix: 'myapp.', datadogServer: 'api.datadoghq.eu' });
 
 function collectMemoryStats() {
     var memUsage = process.memoryUsage();
@@ -50,6 +50,11 @@ There's also a longer [tutorial](https://dbader.org/blog/monitoring-your-nodejs-
 
 Make sure the `DATADOG_API_KEY` environment variable is set to your DataDog
 API key. You can find the API key under [Integrations > APIs](https://app.datadoghq.com/account/settings#api). *You only need to provide the API key, not the APP key. However, you can provide an APP key if you want by setting the `DATADOG_APP_KEY` environment variable.*
+
+### DataDog HOST
+
+You can set your Datadog server with the `DATADOG_SERVER` environment variable.
+For example DATADOG_SERVER='api.datadoghq.eu' or DATADOG_SERVER='api.datadoghq.com'
 
 ### Module setup
 
